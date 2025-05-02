@@ -24,7 +24,7 @@ public class SpawnManager : MonoBehaviour
     {
         if (playerControllerScript.gameOver == false)
         {
-            float repeatRate = Random.Range(1, 5);
+            float repeatRate = Random.Range(2, 5);
             Instantiate(obstaclePrefab, spawnPos, obstaclePrefab.transform.rotation);
             Invoke("spawnObstacle", repeatRate);
         }
